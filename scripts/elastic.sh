@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-if [ $1 == "run" ]
+if [ $1 == "start" ]
 then
     export ES_HOSTS="http://localhost:9200"
     docker run -d \

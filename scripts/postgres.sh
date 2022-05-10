@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-if [ $1 == "start" ]
-then
+start() {
 	docker run \
 		--rm   \
 		--name  postgres \
@@ -11,11 +10,26 @@ then
 		-e POSTGRES_PASSWORD=postgres \
 		-e POSTGRES_DB=postgres \
 		-d postgres
+}
+
+stop() {
+	docker stop postgres
+}
+
+if [ $1 == "start" ]
+then
+	start
 fi
 
 if [ $1 == "stop" ]
 then
-	docker stop postgres
+	stop
+fi
+
+if [ $1 == "restart" ]
+then
+	stop
+	start
 fi
 
 
