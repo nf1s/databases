@@ -1,3 +1,6 @@
+default:
+	@just --list
+
 elastic arg:
 	@./scripts/elastic.sh "{{arg}}"
 
