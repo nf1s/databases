@@ -24,6 +24,13 @@ just postgres start
 just postgres stop
 ```
 
+### psql
+
+```bash
+just postgres shell
+
+```
+
 ### Pull and run elastic
 
 ```bash
