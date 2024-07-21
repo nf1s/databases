@@ -1,8 +1,8 @@
 default:
 	@just --list
 
-elastic arg:
-	@./scripts/elastic.sh "{{arg}}"
+opensearch arg:
+	@./scripts/opensearch.sh "{{arg}}"
 
 postgres arg:
 	@./scripts/postgres.sh "{{arg}}"

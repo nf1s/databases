@@ -14,7 +14,7 @@ start() {
 		-e POSTGRES_USER=postgres \
 		-e POSTGRES_PASSWORD=postgres \
 		-e POSTGRES_DB=postgres \
-		-d postgres:14
+		-d postgres:16
 }
 
 stop() {
